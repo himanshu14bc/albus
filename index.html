@@ -12,16 +12,10 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <!--        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
-
-
         <!--For Plugins external css-->
         <link rel="stylesheet" href="assets/css/plugins.css" />
         <link rel="stylesheet" href="assets/css/lato-webfont.css" />
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
-
-
-
         <!--Theme custom css -->
         <link rel="stylesheet" href="assets/css/style.css">
 
@@ -29,6 +23,10 @@
         <link rel="stylesheet" href="assets/css/responsive.css" />
 
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <!-- Login CSS -->
+        <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
+        <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+        <link rel="stylesheet" href="assets/css/style-login.css">
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -46,6 +44,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
+
                     <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="" /></a>
                 </div>
 
@@ -60,7 +59,74 @@
 
                     </ul>
                 </div><!-- /.navbar-collapse -->
+  <!--Login Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <span class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <!-- <h4 class="modal-title">Modal Header</h4> -->
+            </span>
+            <div class="modal-body"><div class="card"></div>
+            <div class="card">
+              <h1 class="title">ADMIN LOGIN</h1>
+              <form>
+                <div class="input-container">
+                  <input type="#{type}" id="#{label}" required="required"/>
+                  <label for="#{label}">Username</label>
+                  <div class="bar"></div>
+                </div>
+                <div class="input-container">
+                  <input type="#{type}" id="#{label}" required="required"/>
+                  <label for="#{label}">Password</label>
+                  <div class="bar"></div>
+                </div>
+                <div class="button-container">
+                  <button><span>Go</span></button>
+                </div>
+                <div class="footer"><a href="#">Forgot your password?</a></div>
+              </form>
+            </div>
+            <div class="card alt">
+              <div class="toggle"></div>
+              <h1 class="title">ENROLL NOW
+                <div class="close"></div>
+              </h1>
+              <form>
+                <div class="input-container">
+                  <input type="#{type}" id="#{label}" required="required"/>
+                  <label for="#{label}">Username</label>
+                  <div class="bar"></div>
+                </div>
+                <div class="input-container">
+                  <input type="#{type}" id="#{label}" required="required"/>
+                  <label for="#{label}">Password</label>
+                  <div class="bar"></div>
+                </div>
+                <div class="input-container">
+                  <input type="#{type}" id="#{label}" required="required"/>
+                  <label for="#{label}">Repeat Password</label>
+                  <div class="bar"></div>
+                </div>
+                <div class="button-container">
+                  <button><span>Next</span></button>
+                </div>
+              </form>
+            </div>
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
             </div><!-- /.container-fluid -->
+
+             <!-- Trigger the modal with a button -->
+            <a style="float: right;margin-top: -69px;margin-right: 16px;" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+                <span class="glyphicon glyphicon-log-in"></span> Log in
+              </a>
         </nav>
 
         <!--Home page style-->
@@ -309,7 +375,7 @@
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="copyright text-left">
                           <span>CONTACT US</span><br><span>Write or call us at</span><br><span>info@ODMTTennisacademy.com</span><br><span>123-456-7890</span><br>  <br>
-                            <p>Made with <i class="fa fa-heart"></i> by <a href="http://bootstrapthemes.co"> HSDesigns</a> 2017. All rights reserved.</p>
+                            <p>Made with <i class="fa fa-heart"></i> by HSDesigns 2017. All rights reserved.</p>
                      </div>
                      </div>
 
@@ -330,5 +396,6 @@
         <script src="assets/js/jquery.magnific-popup.js"></script>
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/login-index.js"></script>
     </body>
 </html>
